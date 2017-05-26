@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00632DF1EB506660025D62B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FB71EB1B3EE007498EB /* Main.storyboard */; };
+		A00632E01EB5066F0025D62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */; };
+		A048612D1ED22CC8006832E9 /* upin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048612C1ED22CC8006832E9 /* upin.swift */; };
+		A048612F1ED22CEA006832E9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048612E1ED22CEA006832E9 /* SignIn.swift */; };
+		A04861311ED22CF9006832E9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861301ED22CF9006832E9 /* SignUp.swift */; };
+		A04861331ED22F7D006832E9 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861321ED22F7D006832E9 /* home.swift */; };
 		A04C1FB41EB1B3EE007498EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */; };
 		A04C1FB61EB1B3EE007498EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1FB51EB1B3EE007498EB /* ViewController.swift */; };
-		A04C1FB91EB1B3EE007498EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FB71EB1B3EE007498EB /* Main.storyboard */; };
-		A04C1FBB1EB1B3EE007498EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */; };
 		A04C1FBE1EB1B3EE007498EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FBC1EB1B3EE007498EB /* LaunchScreen.storyboard */; };
+		A04CD10F1EB1D05100D68E36 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CD10E1EB1D05000D68E36 /* test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A048612C1ED22CC8006832E9 /* upin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upin.swift; sourceTree = "<group>"; };
+		A048612E1ED22CEA006832E9 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		A04861301ED22CF9006832E9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		A04861321ED22F7D006832E9 /* home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		A04C1FB01EB1B3EE007498EB /* Roommaide1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommaide1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04C1FB51EB1B3EE007498EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04C1FBD1EB1B3EE007498EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04C1FBF1EB1B3EE007498EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04CD10E1EB1D05000D68E36 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */,
+				A04CD10E1EB1D05000D68E36 /* test.m */,
 				A04C1FB51EB1B3EE007498EB /* ViewController.swift */,
+				A048612C1ED22CC8006832E9 /* upin.swift */,
 				A04C1FB71EB1B3EE007498EB /* Main.storyboard */,
+				A04861321ED22F7D006832E9 /* home.swift */,
+				A048612E1ED22CEA006832E9 /* SignIn.swift */,
+				A04861301ED22CF9006832E9 /* SignUp.swift */,
 				A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */,
 				A04C1FBC1EB1B3EE007498EB /* LaunchScreen.storyboard */,
 				A04C1FBF1EB1B3EE007498EB /* Info.plist */,
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					A04C1FAF1EB1B3EE007498EB = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -123,8 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04C1FBE1EB1B3EE007498EB /* LaunchScreen.storyboard in Resources */,
-				A04C1FBB1EB1B3EE007498EB /* Assets.xcassets in Resources */,
-				A04C1FB91EB1B3EE007498EB /* Main.storyboard in Resources */,
+				A00632E01EB5066F0025D62B /* Assets.xcassets in Resources */,
+				A00632DF1EB506660025D62B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04C1FB61EB1B3EE007498EB /* ViewController.swift in Sources */,
+				A04861311ED22CF9006832E9 /* SignUp.swift in Sources */,
+				A04861331ED22F7D006832E9 /* home.swift in Sources */,
+				A048612D1ED22CC8006832E9 /* upin.swift in Sources */,
+				A048612F1ED22CEA006832E9 /* SignIn.swift in Sources */,
 				A04C1FB41EB1B3EE007498EB /* AppDelegate.swift in Sources */,
+				A04CD10F1EB1D05100D68E36 /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +270,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Roommaide1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabraham2012.Roommaide1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Roommaide1/Roommaide1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Roommaide1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabraham2012.Roommaide1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Roommaide1/Roommaide1-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +314,7 @@
 				A04C1FC41EB1B3EE007498EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
