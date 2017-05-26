@@ -8,7 +8,7 @@
 
 import UIKit
 
-class home: UIViewController {
+class GroupsViewController: UIViewController {
     
     @IBOutlet weak var banner: UIImageView!
     

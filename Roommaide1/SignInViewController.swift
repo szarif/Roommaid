@@ -1,5 +1,5 @@
 //
-//  SignUp.swift
+//  SignIn.swift
 //  Roommaide1
 //
 //  Created by Gil Abraham on 5/21/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUp: UIViewController {
+class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

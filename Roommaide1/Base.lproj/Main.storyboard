@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="44" y="383"/>
         </scene>
-        <!--Sign In-->
+        <!--Sign In View Controller-->
         <scene sceneID="guV-BW-Bd0">
             <objects>
-                <viewController id="efU-o1-ywb" customClass="SignIn" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="efU-o1-ywb" customClass="SignInViewController" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AkV-wl-jst">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="546" y="43"/>
         </scene>
-        <!--Sign Up-->
+        <!--Sign Up View Controller-->
         <scene sceneID="dOT-D6-YnK">
             <objects>
-                <viewController id="De9-EK-Hqc" customClass="SignUp" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="De9-EK-Hqc" customClass="SignUpViewController" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bWd-Ml-3PJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="545.5" y="809.5"/>
         </scene>
-        <!--Home-->
+        <!--Groups View Controller-->
         <scene sceneID="5FP-XU-iLi">
             <objects>
-                <viewController id="cFK-Xm-ulf" customClass="home" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cFK-Xm-ulf" customClass="GroupsViewController" customModule="Roommaide1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sqB-JR-Ndd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,6 +360,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="d9d-4d-GTG"/>
-        <segue reference="0HD-Nw-7wc"/>
+        <segue reference="Z9t-x1-6Bm"/>
     </inferredMetricsTieBreakers>
 </document>

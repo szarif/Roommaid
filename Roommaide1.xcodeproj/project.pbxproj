@@ -10,9 +10,9 @@
 		A00632DF1EB506660025D62B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FB71EB1B3EE007498EB /* Main.storyboard */; };
 		A00632E01EB5066F0025D62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */; };
 		A048612D1ED22CC8006832E9 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048612C1ED22CC8006832E9 /* welcomeViewController.swift */; };
-		A048612F1ED22CEA006832E9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048612E1ED22CEA006832E9 /* SignIn.swift */; };
-		A04861311ED22CF9006832E9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861301ED22CF9006832E9 /* SignUp.swift */; };
-		A04861331ED22F7D006832E9 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861321ED22F7D006832E9 /* home.swift */; };
+		A048612F1ED22CEA006832E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048612E1ED22CEA006832E9 /* SignInViewController.swift */; };
+		A04861311ED22CF9006832E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861301ED22CF9006832E9 /* SignUpViewController.swift */; };
+		A04861331ED22F7D006832E9 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04861321ED22F7D006832E9 /* GroupsViewController.swift */; };
 		A04C1FB41EB1B3EE007498EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */; };
 		A04C1FB61EB1B3EE007498EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1FB51EB1B3EE007498EB /* ViewController.swift */; };
 		A04C1FBE1EB1B3EE007498EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04C1FBC1EB1B3EE007498EB /* LaunchScreen.storyboard */; };
@@ -21,9 +21,9 @@
 
 /* Begin PBXFileReference section */
 		A048612C1ED22CC8006832E9 /* welcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
-		A048612E1ED22CEA006832E9 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
-		A04861301ED22CF9006832E9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		A04861321ED22F7D006832E9 /* home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		A048612E1ED22CEA006832E9 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A04861301ED22CF9006832E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A04861321ED22F7D006832E9 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		A04C1FB01EB1B3EE007498EB /* Roommaide1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommaide1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04C1FB51EB1B3EE007498EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				A04C1FB51EB1B3EE007498EB /* ViewController.swift */,
-				A04861301ED22CF9006832E9 /* SignUp.swift */,
-				A048612E1ED22CEA006832E9 /* SignIn.swift */,
-				A04861321ED22F7D006832E9 /* home.swift */,
+				A04861301ED22CF9006832E9 /* SignUpViewController.swift */,
+				A048612E1ED22CEA006832E9 /* SignInViewController.swift */,
+				A04861321ED22F7D006832E9 /* GroupsViewController.swift */,
 				A048612C1ED22CC8006832E9 /* welcomeViewController.swift */,
 			);
 			name = Views;
@@ -168,10 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04C1FB61EB1B3EE007498EB /* ViewController.swift in Sources */,
-				A04861311ED22CF9006832E9 /* SignUp.swift in Sources */,
-				A04861331ED22F7D006832E9 /* home.swift in Sources */,
+				A04861311ED22CF9006832E9 /* SignUpViewController.swift in Sources */,
+				A04861331ED22F7D006832E9 /* GroupsViewController.swift in Sources */,
 				A048612D1ED22CC8006832E9 /* welcomeViewController.swift in Sources */,
-				A048612F1ED22CEA006832E9 /* SignIn.swift in Sources */,
+				A048612F1ED22CEA006832E9 /* SignInViewController.swift in Sources */,
 				A04C1FB41EB1B3EE007498EB /* AppDelegate.swift in Sources */,
 				A04CD10F1EB1D05100D68E36 /* test.m in Sources */,
 			);
