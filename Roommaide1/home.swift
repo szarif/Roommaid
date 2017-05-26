@@ -18,7 +18,7 @@ class home: UIViewController {
         super.viewDidLoad()
         
         //make background pic blury
-        //  testdd
+        //  testdfdfd
         insertBlurView(banner, style: UIBlurEffectStyle.dark)
         //insertBlurView(uiView, style: UIBlurEffectStyle.dark)
 
