@@ -65,18 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				A04C1FB31EB1B3EE007498EB /* AppDelegate.swift */,
+				A09F3F0E1ED8C1DE001B416C /* Model */,
+				A09F3F0D1ED8C1C2001B416C /* Views */,
 				A04CD10E1EB1D05000D68E36 /* test.m */,
-				A04C1FB51EB1B3EE007498EB /* ViewController.swift */,
-				A048612C1ED22CC8006832E9 /* welcomeViewController.swift */,
 				A04C1FB71EB1B3EE007498EB /* Main.storyboard */,
-				A04861321ED22F7D006832E9 /* home.swift */,
-				A048612E1ED22CEA006832E9 /* SignIn.swift */,
-				A04861301ED22CF9006832E9 /* SignUp.swift */,
 				A04C1FBA1EB1B3EE007498EB /* Assets.xcassets */,
 				A04C1FBC1EB1B3EE007498EB /* LaunchScreen.storyboard */,
 				A04C1FBF1EB1B3EE007498EB /* Info.plist */,
 			);
 			path = Roommaide1;
+			sourceTree = "<group>";
+		};
+		A09F3F0D1ED8C1C2001B416C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A04C1FB51EB1B3EE007498EB /* ViewController.swift */,
+				A04861301ED22CF9006832E9 /* SignUp.swift */,
+				A048612E1ED22CEA006832E9 /* SignIn.swift */,
+				A04861321ED22F7D006832E9 /* home.swift */,
+				A048612C1ED22CC8006832E9 /* welcomeViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A09F3F0E1ED8C1DE001B416C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
