@@ -8,7 +8,7 @@
 
 import UIKit
 
-class upin: UIViewController {
+class welcomeViewController: UIViewController {
 
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var joinButton: UIButton!
