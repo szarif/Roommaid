@@ -13,16 +13,31 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var banner: UIView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet weak var tableView: UITableView!
     
-    var groups: [String] = ["Group1", "Group2", "Group3"]
+    @IBOutlet weak var profilePic: UIImageView!
+    
+    var groups: [String] = ["Group1", "Group2", "Group3", "Group4"]
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        //rounded profile pic
+        self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 2;
+        self.profilePic.clipsToBounds = true;
+        
+        
+        searchBar.barTintColor = UIColor(red:0.08, green:0.46, blue:1.00, alpha:1)
+       
+        
+        
+        
         //make background pic blury
-        insertBlurView(banner, style: UIBlurEffectStyle.dark)
+       // insertBlurView(banner, style: UIBlurEffectStyle.dark)
+       
         
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
