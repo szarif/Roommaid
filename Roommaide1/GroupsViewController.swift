@@ -10,7 +10,8 @@ import UIKit
 
 class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    var searchController = UISearchController()
+    
     @IBOutlet weak var banner: UIView!
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -29,9 +30,15 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 2;
         self.profilePic.clipsToBounds = true;
         
-        
-        searchBar.barTintColor = UIColor(red:0.08, green:0.46, blue:1.00, alpha:1)
-       
+        //searchBar(searchController)
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
+        searchController.searchBar.placeholder = NSLocalizedString("Search Groups", comment: "")
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        tableView.contentOffset = CGPoint(x: 0, y: searchController.searchBar.frame.size.height)
+ 
         
         
         
@@ -66,6 +73,15 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     
+    func searchBar(_ searchController: UISearchController){
+        
+        self.searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
+        searchController.searchBar.placeholder = NSLocalizedString("Search Groups", comment: "")
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+    }
     
     
     
