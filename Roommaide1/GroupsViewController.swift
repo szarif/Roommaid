@@ -23,6 +23,16 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var profilePic: UIImageView!
     
     var groups: [String] = ["Group1", "Group2", "Group3", "Group4"]
+    //var images: String = "email" "group" "password" "Padlock Icon"
+   
+    var imagesArray: [UIImage] = [
+        UIImage(named: "email.png")!,
+        UIImage(named: "password.png")!,
+        UIImage(named: "group.png")!,
+        UIImage(named: "Padlock Icon.png")!
+    ]
+    
+   
 
     override func viewDidLoad()
     {
@@ -74,8 +84,12 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "groupCell")!
         
         cell.textLabel?.text = self.groups[indexPath.row]
-    
         
+        imagesArray.append(UIImage(named: "email.png")!)
+        cell.imageView?.layer.cornerRadius = (cell.imageView?.frame.size.width)! / 2
+        cell.imageView?.clipsToBounds = true;
+        cell.imageView?.image = imagesArray[indexPath.row]
+  
         return cell
     }
     
@@ -105,8 +119,8 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         searchController.searchBar.layer.borderColor = UIColor(red:0.00, green:0.5, blue:1.00, alpha:1.0).cgColor
     }
     
-   
-
+    
+    
     //blury background function
     func insertBlurView (_ view: UIView, style: UIBlurEffectStyle)
     {
