@@ -8,9 +8,11 @@
 
 import UIKit
 
-class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     var searchController = UISearchController()
+    
+    @IBOutlet weak var profileButton: UIButton!
     
     @IBOutlet weak var banner: UIView!
     
@@ -33,13 +35,22 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         //searchBar(searchController)
         searchController = UISearchController(searchResultsController: nil)
         searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.barTintColor = UIColor(red:0.00, green:0.5, blue:1.00, alpha:1.0)
         searchController.dimsBackgroundDuringPresentation = true
         searchController.searchBar.placeholder = NSLocalizedString("Search Groups", comment: "")
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         tableView.contentOffset = CGPoint(x: 0, y: searchController.searchBar.frame.size.height)
- 
+       
+        //set cancel button color
+        let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
+       
+        //search bar border color
+        searchController.searchBar.layer.borderWidth = 1
+        searchController.searchBar.layer.borderColor = UIColor(red:0.00, green:0.5, blue:1.00, alpha:1.0).cgColor
         
+    
         
         
         //make background pic blury
@@ -63,6 +74,7 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "groupCell")!
         
         cell.textLabel?.text = self.groups[indexPath.row]
+    
         
         return cell
     }
@@ -77,14 +89,23 @@ class GroupsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.searchController = UISearchController(searchResultsController: nil)
         searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.barTintColor = UIColor(red:0.00, green:0.5, blue:1.00, alpha:1.0)
         searchController.dimsBackgroundDuringPresentation = true
         searchController.searchBar.placeholder = NSLocalizedString("Search Groups", comment: "")
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
+        tableView.contentOffset = CGPoint(x: 0, y: searchController.searchBar.frame.size.height)
+        
+        //set cancel button color
+        let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
+        
+        //search bar border color
+        searchController.searchBar.layer.borderWidth = 1
+        searchController.searchBar.layer.borderColor = UIColor(red:0.00, green:0.5, blue:1.00, alpha:1.0).cgColor
     }
     
-    
-    
+   
 
     //blury background function
     func insertBlurView (_ view: UIView, style: UIBlurEffectStyle)
